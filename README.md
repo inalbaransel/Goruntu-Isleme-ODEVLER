@@ -37,8 +37,8 @@ pip install opencv-python numpy matplotlib
 Örnek çalıştırma:
 ```bash
 # 3. Hafta - Görev 1
-python3 3.HAFTA/KontrastGerme.py
+python3 "3.HAFTA/1.GOREV/KontrastGerme.py"
 
 # 3. Hafta - Görev 2
-python3 3.HAFTA/HistogramEsitleme.py
+python3 "3.HAFTA/2.GOREV/HistogramEsitleme.py"
 ```
