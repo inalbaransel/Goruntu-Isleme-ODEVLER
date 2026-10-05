@@ -45,9 +45,6 @@ python3 "3.HAFTA/1.GOREV/KontrastGerme.py"
 # 3. Hafta - Görev 2
 python3 "3.HAFTA/2.GOREV/HistogramEsitleme.py"
 
-# 3. Hafta - Görev 3 (Python)
-python3 "3.HAFTA/3.GOREV/clahe.py"
-
 # 3. Hafta - Görev 3 (C++)
 cd "3.HAFTA/3.GOREV"
 cmake . && make
