@@ -24,6 +24,9 @@ Bu depo, Görüntü İşleme dersi kapsamında geliştirilen haftalık uygulamal
   * Hazır fonksiyon kullanılmadan 256-değerli parlaklık histogramı ($h(r)$) çıkarılır.
   * Kümülatif Dağılım Fonksiyonu (CDF - Cumulative Distribution Function) hesaplanır.
   * CDF tabanlı dönüşüm formülü uygulanarak histogram dengelenir ve çıktı kaydedilir.
+* **Görev 3: CLAHE (Contrast Limited Adaptive Histogram Equalization):**
+  * OpenCV hazır `cv::createCLAHE` fonksiyonu ile görüntü iyileştirilir.
+  * Sıfırdan C++ ile 8x8 karo (tile) tabanlı, kontrast sınırlandırmalı (clipping) ve çift doğrusal enterpolasyonlu (bilinear interpolation) CLAHE algoritması kodlanır ve karşılaştırılır.
 
 ---
 
@@ -41,4 +44,12 @@ python3 "3.HAFTA/1.GOREV/KontrastGerme.py"
 
 # 3. Hafta - Görev 2
 python3 "3.HAFTA/2.GOREV/HistogramEsitleme.py"
+
+# 3. Hafta - Görev 3 (Python)
+python3 "3.HAFTA/3.GOREV/clahe.py"
+
+# 3. Hafta - Görev 3 (C++)
+cd "3.HAFTA/3.GOREV"
+cmake . && make
+./clahe
 ```
