@@ -27,6 +27,10 @@ Bu depo, Görüntü İşleme dersi kapsamında geliştirilen haftalık uygulamal
 * **Görev 3: CLAHE (Contrast Limited Adaptive Histogram Equalization):**
   * OpenCV hazır `cv::createCLAHE` fonksiyonu ile görüntü iyileştirilir.
   * Sıfırdan C++ ile 8x8 karo (tile) tabanlı, kontrast sınırlandırmalı (clipping) ve çift doğrusal enterpolasyonlu (bilinear interpolation) CLAHE algoritması kodlanır ve karşılaştırılır.
+* **Görev 4: 3x3 Ortalama (Mean/Box) Filtresi ile Gürültü Bastırma:**
+  * Gürültülü görüntü üzerinde 3x3 boyutunda $1/9$ ağırlıklı çekirdek (kernel) 2D konvolüsyon ile gezdirilir.
+  * Hazır fonksiyon kullanılmadan kenar taşmaları yönetilerek (reflect padding) gürültü bastırılır.
+  * Hem Python hem de C++ ile gerçeklenmiştir.
 
 ---
 
@@ -49,4 +53,12 @@ python3 "3.HAFTA/2.GOREV/HistogramEsitleme.py"
 cd "3.HAFTA/3.GOREV"
 cmake . && make
 ./clahe
+
+# 3. Hafta - Görev 4 (Python)
+python3 "3.HAFTA/4.GOREV/ortalama_filtre.py"
+
+# 3. Hafta - Görev 4 (C++)
+cd "3.HAFTA/4.GOREV"
+cmake . && make
+./ortalama_filtre
 ```
